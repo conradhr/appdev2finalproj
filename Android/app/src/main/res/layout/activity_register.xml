@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".authentication.register">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="18dp"
+        android:alpha="0.17"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/editextbackgroundtwo"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/lname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/editextbackgroundtwo"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="8dp"
+        android:text="Register to begin renting as soon today!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Step 1: Account Info"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/editextbackgroundtwo"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/passsword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+    <EditText
+        android:id="@+id/passsword"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/editextbackgroundtwo"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="121dp"
+        android:background="@color/black"
+        android:text="Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passsword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
