@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/dialogSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/white_border"
+        >
+
+        <ImageView
+            android:id="@+id/dialogLocationMagnifyIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_magnify"
+            />
+
+        <EditText
+            android:id="@+id/dialogSearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dialogLocationMagnifyIcon"
+            android:background="@null"
+            android:hint="Enter pickup address"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapboxmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="37.7749"
+        mapbox:mapbox_cameraTargetLng="-122.4194"
+        mapbox:mapbox_cameraZoom="12"/>
+
+    <Button
+        android:id="@+id/dialogContinueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/nice_btn"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/dialogConfirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/nice_btn"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"/>
+</RelativeLayout>
